@@ -118,7 +118,7 @@ with c2:
     if st.button("O que aconteceu essa semana?", use_container_width=True):
         with st.spinner("Lendo o noticiário da semana..."):
             try:
-                fofocas_brutas = buscar_no_google_news('"pronunciamento" OR "polêmica" OR "treta" OR "cancelamento" OR "respondeu" OR "Famosos" OR "influencer"', "F", 20)
+                fofocas_brutas = buscar_no_google_news('"pronunciamento" OR "polêmica" OR "treta" OR "cancelamento" OR "respondeu" OR "Famoso" OR "influencers" Or "celebridade"', "F", 20)
                 serias_brutas  = buscar_no_google_news("projeto de lei OR investigação OR stf OR senado OR câmara OR operação policial OR política pública", "S", 20)
                 if not fofocas_brutas or not serias_brutas:
                     st.error("Busca falhou. Tente novamente.")
@@ -208,7 +208,7 @@ if st.session_state.get("dados_prontos"):
 
         ca, cb, cc = st.columns([0.12, 1, 0.12])
         with cb:
-            lbl = "▲ Fechar" if st.session_state.aberto == idx else "▼ Ver o que estava por baixo"
+            lbl = "▲ Fechar" if st.session_state.aberto == idx else "▼ O que estava por baixo da cortina?"
             if st.button(lbl, key=f"t{idx}", use_container_width=True):
                 st.session_state.aberto = None if st.session_state.aberto == idx else idx
                 st.rerun()
@@ -265,15 +265,15 @@ quem_html = (
     'Mas por que a Cortina de Fumaça?'
     '</div>'
 
-    '<div style="font-family: \'Times New Roman\', Times, serif; font-weight: bold; font-size: 18px; color: #ffffff; line-height: 1.85; max-width: 560px; margin: 0 auto 2rem;">'
+    '<div style="font-family: \'Times New Roman\', Times, serif; font-size: 18px; color: #ffffff; line-height: 1.85; max-width: 560px; margin: 0 auto 2rem;">'
     'Vivemos numa era em que o algoritmo decide o que merece atenção e muitas vezes, '
     'o que mais viraliza é o que menos importa. A Cortina de Fumaça nasceu para mostrar '
     'esse contraste: ao lado de cada fofoca que dominou os feeds, há uma notícia séria '
     'que passou quase despercebida. '
-    'Porque saber que existe uma cortina é o primeiro passo para enxergar além dela.'
+    '\Porque saber que existe uma cortina é o primeiro passo para enxergar além dela.'
     '</div>'
 
-    '<div style="font-family: \'Times New Roman\', Times, serif; font-weight: bold; font-size: 14px; letter-spacing: 0.14em; text-transform: uppercase; color: #ffffff; border-top: 1px solid #2e2e2e; padding-top: 1.5rem; max-width: 480px; margin: 0 auto; line-height: 2;">'
+    '<div style="font-family: \'Times New Roman\', Times, serif; font-weight: bold; font-size: 13px; letter-spacing: 0.14em; text-transform: uppercase; color: #ffffff; border-top: 1px solid #2e2e2e; padding-top: 1.5rem; max-width: 480px; margin: 0 auto; line-height: 2;">'
     'Matéria de Comunicação, Filosofia &amp; Tecnologia — IA<br>'
     'Prof. Luis Gustavo de Oliveira Rodrigues<br>'
     'Escola de Comunicação DiGital FGV-RIO'
