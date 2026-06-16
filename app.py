@@ -270,7 +270,8 @@ quem_html = (
     'o que mais viraliza é o que menos importa. A Cortina de Fumaça nasceu para mostrar '
     'esse contraste: ao lado de cada fofoca que dominou os feeds, há uma notícia séria '
     'que passou quase despercebida. '
-    '\Porque saber que existe uma cortina é o primeiro passo para enxergar além dela.'
+    
+    'Porque saber que existe uma cortina é o primeiro passo para enxergar além dela.'
     '</div>'
 
     '<div style="font-family: \'Times New Roman\', Times, serif; font-weight: bold; font-size: 13px; letter-spacing: 0.14em; text-transform: uppercase; color: #ffffff; border-top: 1px solid #2e2e2e; padding-top: 1.5rem; max-width: 480px; margin: 0 auto; line-height: 2;">'
